@@ -1,0 +1,38 @@
+body{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 100px;
+}
+.ponto{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px  solid red;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 5;
+}
+.pulsante{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: pulsante 0.8s ease-out 0s infinite normal none;
+    position: fixed;
+    z-index: 1;
+    
+}
+@keyframes pulsante {
+    0%{ /* from */
+        transform: scale(1);
+        opacity: 1;
+        background-color:#ff3333;
+    }
+    100%{ /* to */
+        transform: scale(1.5);
+        opacity: 0;
+        background-color: #ffaaaa;
+    }
+}

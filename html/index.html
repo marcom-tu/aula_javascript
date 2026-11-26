@@ -1,0 +1,333 @@
+<!DOCTYPE html> <!--Declaracao do tipo de documento-->
+<html lang="pt-BR"><!-- Abre o processamento de html-->
+
+<head> <!--Cabecalho -->
+    <title>Titulo aqui</title><!--Titulo -->
+    <!--meta dados-->
+    <link rel="stylesheet" href="../css/index.css"><!--Index.css-->
+
+    <meta http-equiv="refresh" content="3"><!--Tempo de atualização da página em segundos-->
+    <meta charset="utf-8"><!--Caracteres especiais-->
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="keywords" content="HTML, funcoes, aulas"><!--Palavra chave / Conteudo relacionado-->
+    <meta name="description" content="Tutoriais de funções das aulas de HTML"><!--Descrição do conteudo-->
+    <meta name="author" content="Miranda, Marco"><!--Nome do Autor da Página-->
+    <!--CSS-->
+    <style>
+        /*Seletor Universal*/
+        * {
+            color: black;
+            /*Nome cor*/
+        }
+
+        /*Seletor Especifico*/
+        p {
+            color: rgb(58, 113, 0);
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+            text-decoration-color: red;
+            text-decoration-thickness: 1px;
+            text-shadow: 1px 3px 5px black;
+        }
+
+        /*Seletor Múltiplo*/
+        h5,
+        h6 {
+            color: darkgoldenrod;
+            background-image: linear-gradient(135deg,yellow 10%, #1abc9c 50%, #2c3e50 70%);
+        }
+
+        /*Seletor por ID*/
+        #titulo2 {
+            /**/
+            color: rgba(46, 109, 255, 0.59);
+            /*RGB com Alpha*/
+        }
+
+        /*Seletor por Classe*/
+        .classe1 {
+            color: hsl(270, 80%, 50%);
+            /*Matiz,Saturação,Luminosidade*/
+        }
+
+        div {
+            background-image: conic-gradient( #1abc9c, #2c3e50);
+            width: 600px;
+            padding: 30px 10px 10px 10px;
+            /*Sentido Horario*/
+            border: 3px solid black;
+            /*width, style, color*/
+            border-radius: 10px;
+            margin: 10px auto 30px auto;
+            /*Sentido Horario (permite colocar apenas alguns OU auto)*/
+        }
+    </style>
+</head>
+
+<body background="images.jpg" bgcolor=#dddddd text="0000000" link="ff0000">
+    <!--Corpo do site com fundo cinza claro letra em cinza escuro e link roxo-->
+    <div>
+        <h1 style="color:cyan;background:black;">Exemplo de Titulo 1</h1><!--Titulo 1 com css inline-->
+        <h2 id="titulo2">Exemplo de Titulo 2</h2><!--Titulo 2 -->
+        <h3 class="classe1">Exemplo de Titulo 3</h3><!--Titulo 3 -->
+        <h4 class="classe1">Exemplo de Titulo 4</h4><!--Titulo 4 -->
+        <h5>Exemplo de Titulo 5</h5><!--Titulo 5 -->
+        <h6>Exemplo de Titulo 6</h6><!--Titulo 6 -->
+    </div>
+    <div>
+        <p align="left"><!--Paragrafo com alinhamento -->
+            Paragrafo aqui com o alinhamento à esquerada
+        </p>
+        <p align="right"><!--Paragrafo com alinhamento -->
+            Paragrafo aqui com o alinhamento à direita
+        </p>
+        <p align="center"><!--Paragrafo com alinhamento -->
+            Paragrafo aqui com o alinhamento central
+        </p>
+        <p align="justify"><!--Paragrafo com alinhamento -->
+            Paragrafo aqui com o alinhamento em justificar mas so vai aparecer se o texto for grande o suficiente como
+            nesse
+            caso.
+        </p>
+    </div>
+    <div>
+        <br><!--Quebra de linha -->
+        <br>Normal <b>Negrito</b>
+        <br>Normal <i>Italico</i>
+        <br>Normal <u>Sublinhado</u>
+        <br>Normal <strong>Forte</strong><!-- Semelhante ao Negrito -->
+        <br>Normal <tt>Espacamento regular</tt>
+        <br>Normal <big>Maior</big>
+        <br>Normal <small>Menor</small>
+        <br>Normal <sup>Acima</sup>
+        <br>Normal <sub>Abaixo</sub>
+        <br>Normal <font face="algerian,colibri,arial"> Fonte Algerian,Colibri,Arial</font>
+        <br>Normal <font size="+1"> Fonte Tamanho +1 </font>
+        <br>Normal <font color="blue"> Fonte Azul </font>
+        <br>Normal <font color=#A4468F> Fonte RGB </font>
+    </div>
+    <div>
+        <br><a href="http://www.google.com">Link mesma guia</a>
+        <br><a href="http://www.google.com" target="_blank">Link outra guia</a>
+        <br><a href="http://www.google.com" target="_blank">Link outra guia</a>
+    </div>
+    <div>
+        <ul>
+            <li>Lista não ordenada 1</li>
+            <li>Lista não ordenada 2
+                <ul>
+                    <li>Lista interna 2.1</li>
+                    <ul>
+                        <li>Lista interna 2.1.1</li>
+                    </ul>
+                </ul>
+            </li>
+            <li>Lista não ordenada 3
+                <ul>
+                    <li type="Circle">type="Circle"</li>
+                    <li type="Square">type="Square"</li>
+                    <li type="Disc">type="Disc"</li>
+                </ul>
+            </li>
+            <li>Lista não ordenada 4
+                <ul type="Square">
+                    <li>com square no "ul"</li>
+                </ul>
+            </li>
+        </ul>
+        <ol>
+            <li>Lista ordenada 1</li>
+            <li>Lista ordenada 2
+                <ol>
+                    <li>Lista interna 2.1</li>
+                    <ol>
+                        <li>Lista interna 2.1.1</li>
+                    </ol>
+                </ol>
+            </li>
+            <li>Lista ordenada 3
+                <ol start="10">
+                    <li>Com start="10"</li>
+                </ol>
+            </Li>
+            <li>Com type="I"
+                <ol type="I">
+                    <li>Numeros Romanos Maiusculo</li>
+                </ol>
+            </li>
+            <li>Com type="i"
+                <ol type="i">
+                    <li>Numeros Romanos Minusculo</li>
+                </ol>
+            </li>
+            <li>Com type="A"
+                <ol type="A">
+                    <li>Alfabetico Maiusculo</li>
+                </ol>
+            </li>
+            <li>Com type="a"
+                <ol type="a">
+                    <li>Alfabetico minusculo</li>
+                </ol>
+            </li>
+            <li>Com type="1"
+                <ol type="1">
+                    <li>Numeros</li>
+                </ol>
+            </li>
+        </ol>
+        <dl>
+            <dt>Titulo</dt>
+            <dd>Texto</dd>
+        </dl>
+    </div>
+    <div>
+        <!-- 
+    <table> Tabela
+    border="5" com borda
+    cellspacing="1" com espaçamento entre as celulas
+    cellpadding="1" com espaçamento entre o conteudo e aborda da celula
+    width="100" com largura definida em pixels (pode ser em % da janela
+    align="center" alinhada ao center,left ou right
+    bgcolor="green" com cor de fundo (pode ser RGB)
+    bordercolor="red" com cor de bordas (pode ser RGB)
+    background="images.png" com imagem de fundo
+    -->
+        <table border="5" cellspacing="1" cellpadding="1" width="500" align="center" bgcolor="green"
+            bordercolor="00F0F0" background="fundopng.jpg">
+            <!-- <caption> Titulo ou Nome da tabela 
+        align="top" acima da tabela (pode ser botton para abaixo)
+        -->
+            <caption>
+                Titulo Caption
+            </caption>
+            <!-- <th> Titulo de coluna padrão em negrito e centralizado-->
+            <Th>
+                Nome da Coluna 1
+            </Th>
+            <!--<tr> Linha -->
+            <!-- <td> Coluna
+        align="center" alinhada horizontalmente na celula ao center,left ou right
+        valign="center" alinhada  verticalmente na celula ao center,left ou right
+        nowrap Evita quebra de linha da célula
+        colspan="1" Unifica colunas que a celula irá ocupar
+        rowspan="1" Unifica linhas que a celula irá ocupar
+        bgcolor="purple" cor de fundo (pode ser RGB)
+        background="images.png" com imagem de fundo
+    -->
+            <tr>
+                <td align="center" valign="left" nowrap colspan="1" rowspan="1" bgcolor="purple"
+                    background="fundopng.jpg">
+                    linha 1 coluna 1
+                </td>
+                <td>linha 1 coluna 2</td>
+            </tr>
+            <Tr>
+                <td>linha 2 coluna 1</td>
+                <td>linha 2 coluna 2</td>
+            </Tr>
+        </table>
+    </div>
+    <div>
+
+        <hr><!--Linha divisória -->
+        <hr size=20><!-- Com tamanho em px -->
+        <hr width=10%><!-- Com largura em % da tela -->
+        <hr width=10><!-- Com largura em px -->
+        <hr align="left"><!-- Com alinhamento "left", "center" ou "right" -->
+        <hr noshade><!-- Sem sombra -->
+        <hr color="blue"><!-- Cor Matizada -->
+        <hr color="afafcc"><!-- Cor Hexadecimal -->
+        <hr color=#0ff000><!-- Cor Hexadecimal -->
+    </div>
+    <div>
+        <img src="imagens/NewTux.png" width="50" alt="Pinguin"><!--Imagem-->
+        <img src="imagens/NewTux.png" height="200" alt="Pinguin"><!--Imagem menor-->
+        <img src="imagens/NewTux.png" width="50" alt="Pinguin" border="3"><!--Imagem com borda-->
+        <img src="imagens/NewTux.png" width="50" alt="Pinguin" vspace="100"><!--Imagem com espaço vertical-->
+        <img src="imagens/NewTux.png" width="50" alt="Pinguin" hspace="100"><!--Imagem com espaço horizontal-->
+        <img src="imagens/NewTux.png" width="50" alt="Pinguin" align="top"><!--Imagem com alinhamento superior-->
+        <img src="imagens/NewTux.png" width="50" alt="Pinguin" align="botton"><!--Imagem com alinhamento inferior-->
+        <img src="imagens/NewTux.png" width="50" alt="Pinguin" align="left"
+            border="5"><!--Imagem com alinhamento à esquerda e borda-->
+        <img src="imagens/NewTux.png" width="30" alt="Pinguin" align="right"
+            border="1"><!--Imagem com alinhamento à direita e menor-->
+
+        <br><img src="imagens/Gif-astronauta-arco-iris.gif" width=100% alt="Astronauta"><!--Gif-->
+    </div>
+    <div>
+        <br>
+        <video controls autoplay muted width="200" height="200">
+            <!-- <video> video
+    controls    habilita os controles
+    autoplay    auto inicio
+    muted       iniciar mutado
+    width="10"  tamanho (pode ser em % da tela)
+    height="10" tamanho (pode ser em % da tela)
+    </video> -->
+            <source src="imagens/Video/Unreal-Planet-Nature-Relaxation-Film-with-Calm-Music.mp4" type="video/mp4"> pode
+            ser .ogg ou .mov
+            Video não carregado <!--Mensagem para se der erro-->
+        </video>
+    </div>
+    <div>
+        <br>
+        <iframe src="abnt.html" frameborder="1" title="ATIVIDADE ABNT" width="500" height="500">
+            <!--<iframe> Arquivo
+    src=""          URL ou caminho do arquivo
+    frameborder=""  Borda
+    title=""        Titulo
+    width=""        Tamanho (pode ser em % da tela)
+    height=""       Tamanho (pode ser em % da tela)
+    -->
+        </iframe>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60401.59414946246!2d-48.31058612089843!3d-18.88266059999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a445d5bfa5db3b%3A0x8b423b684ced9100!2sCentro%20de%20Forma%C3%A7%C3%A3o%20Profissional%20Dr.%20Celso%20Charuri%20-%20SENAI%20Uberl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1793831179844!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <div>
+        <form action="EXEMPLO.html" method="get">
+            <!--<form> formulário
+    action="" URL que ira processar os dados
+    method="" Metodo de troca de dados pode ser:
+        GET dentro da URL
+        POST fora da URL
+    -->
+            <p>Usuário</p>
+            <input name="user" type="text">
+            <!--<input> valores de entrada
+        name="nome_var" nome da variável
+        value="" conteúdo da variável (pode ser text ou password)
+        checked booleano(pode ser checkbox ou radio)
+        size="25" quantidade de caracteres exibidos em campos text ou password
+        maxlength="50" comprimento maximo de caracteres nas variaveis text ou password
+        id="" identificação (tecla de atalho)
+        type="text" tipo da variavel (text/password/radio/checkebox/email/file/number/range/search/tel/time/submit/reset/url)
+        -->
+            <p>Senha</p><input name="pass" type="password">
+            <p>Email</p><input name="email" type="email">
+            <p>Contato</p><input name="tel" type="tel">
+            <p>Data Nascimento</p><input name="nasc" type="date">
+            <p>Documento</p><input name="doc" type="file">
+            <p>Quantidade</p><input name="tel" type="number">
+            <br><br>
+            <p><input type="radio">Quero receber ofertas por email</p>
+            <input type="submit" value="Entrar">
+            <input type="reset" value="Limpar">
+
+            <p><input id="li" type="checkbox"></p>
+            <label for="li">Li e aceito os termos</label>
+            <!--Label = aceita clique no texto do id de referencia-->
+
+            <button></button><!--Botão clicável personalizável-->
+            <button type="button">TESTE</button><!--Botão clicável (Ação depende de outras funções)-->
+            <button type="submit">TESTE2</button><!--Botão clicável de enviar formulário-->
+            <button type="reset">TESTE3</button><!--Botão clicável de limpar formulário-->
+
+        </form>
+    </div>
+</body>
+
+</html>

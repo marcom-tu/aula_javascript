@@ -1,0 +1,76 @@
+body{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 100px;
+}
+p{
+    text-shadow: 0px 0px 5px yellow;
+}
+.loading{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-shadow: 0px 0px 5px yellow;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    color:yellow;
+    position: fixed;
+    z-index: 10;
+}
+.rastro{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 105px;
+    height: 105px;
+    border-width: px;
+    border-style: solid;
+    border-left-color: yellow;
+    border-right-color: gray;
+    border-top-color: gray;
+    border-bottom-color: gray;
+    border-radius: 100%;
+    position: relative;
+    animation-name: pont;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    z-index: 1;
+}
+.ponto{
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 15;
+    top: 6px;
+    left: 6px;
+}
+
+@keyframes pont {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

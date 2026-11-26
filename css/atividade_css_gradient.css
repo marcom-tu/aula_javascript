@@ -1,0 +1,66 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #3B4B59
+}
+.geral{
+    display: grid;
+    width: 1000px;
+    height: 400px;
+    grid-template-columns: 900px;
+    grid-template-rows: 100px 700px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+}
+.divs{
+    width: 260px;
+    height: 300px;
+    padding: 0px 20px 15px 20px;
+    border-radius: 15px;
+    border: 1px solid #BBBBBB;
+    text-align: center;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(135deg, #1abc9c 0% 50%, #2c3e50 100%);
+    color: white;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: radial-gradient(circle at top left, #F2D194, #BF4904);
+    color: white;
+}
+.div3{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #BBBBBB;
+    padding-bottom: 50px;
+    height: 265px;
+}
+.conic{
+    width: 130px;
+    height: 130px;
+    background-image: conic-gradient(#41BF61 70%, #F0F2F2 70%);
+    border-radius: 50%;
+}

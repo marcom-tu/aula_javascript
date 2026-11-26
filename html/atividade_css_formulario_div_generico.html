@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="1"><!--Tempo de atualização da página em segundos-->
+    <style>
+        h1 {
+            color: rgb(42, 106, 255)
+        }
+
+        h2 {
+            color: green
+        }
+
+        .full {
+            border: 3px solid black;
+            padding: 30px;
+        }
+
+        .titulo {
+            border: 2px solid black;
+            padding: 10px 0px 80px 20px;
+            margin: 10px auto 30px auto;
+        }
+
+        .inst_req_ext {
+            border: 2px solid gray;
+            padding: 10px 0px 80px 20px;
+            margin: 10px auto 30px auto;
+        }
+
+        .inst_req_int {
+            border: 2px solid green;
+            padding: 10px 0px 40px 0px;
+            margin: 10px auto 30px auto;
+        }
+
+        .tab_reg_ext {
+            border: 2px solid purple;
+            padding: 10px 0px 80px 20px;
+            margin: 10px auto 30px auto;
+        }
+
+        .tab_reg_int {
+            width: 350px;
+            border: 2px solid purple;
+            padding: auto;
+            margin: auto;
+        }
+
+        th {
+            width: 120px;
+            height: 50px;
+            border: 1px solid purple;
+            padding: 10px auto 10px auto;
+            color: purple;
+        }
+
+        td {
+            width: 120px;
+            height: 50px;
+            border: 1px solid gray;
+            padding: 10px auto 10px auto;
+        }
+
+        .form_insc_ext {
+            border: 2px solid orange;
+        }
+
+        .form_insc_int {
+            border: 2px solid orange;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full">
+        <div class="titulo">
+            <h1>Porta de Cadastro e Relatórios</h1>
+            <font color="gray">Exemplo integrando cabeçalhos, listas, tabelas e formularios com estilo estritamente
+                restrito.</font>
+        </div>
+        <div class="inst_req_ext">
+            <h2>Instruções e Requisitos</h2>
+            <div class="inst_req_int">
+                <ul>
+                    <li>Item de lista não ordenada 1 - Leitura das diretrizes</li>
+                    <li>Item de lista não ordenada 2 - Validação dos dados</li>
+                </ul>
+            </div>
+            <div class="inst_req_int">
+                <ol>
+                    <li>Passo 1: Preencha a tabela de registro</li>
+                    <li>Passo 2: Envie o formulário abaixo</li>
+                </ol>
+            </div>
+        </div>
+        <div class="tab_reg_ext">
+            <h2>Tabela de Registros</h2>
+            <div class="tab_reg_int">
+                <table>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="table_td">001</div>
+                        </td>
+                        <td>
+                            <div class="table_td">Ana Silva</div>
+                        </td>
+                        <td>
+                            <div class="table_td">Ativo</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="table_td">002</div>
+                        </td>
+                        <td>
+                            <div class="table_td">Bruno Costa</div>
+                        </td>
+                        <td>
+                            <div class="table_td">Pendente</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="form_insc_ext">
+            <h2>Formulário de Inscrição</h2>
+            <div class="form_insc_int">
+                Nome Completo:
+                E-mail de Contato
+                Categoria:
+                Mensagem:
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

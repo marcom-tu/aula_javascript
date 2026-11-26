@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa Padrão ABNT</title>
+    <style>
+        /* Configurações globais e reset de margens para impressão */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: "Arial", "Times New Roman", sans-serif; /* Fontes aceitas pela ABNT */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Simulação da folha A4 com margens da ABNT (3cm sup/esq, 2cm inf/dir) */
+        .capa-abnt {
+            background-color: #ffffff;
+            width: 210mm;
+            height: 297mm;
+            padding-top: 3cm;
+            padding-left: 3cm;
+            padding-right: 2cm;
+            padding-bottom: 2cm;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            /* Distribuição vertical perfeita dos blocos */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            text-transform: uppercase; /* Força todo o texto em maiúsculas */
+            font-size: 12pt; /* Tamanho oficial padrão */
+            line-height: 1.5;
+        }
+
+        /* Estilização dos blocos internos */
+        .instituicao {
+            font-weight: bold;
+        }
+
+        .autor {
+            margin-top: 3cm; /* Distância recomendada abaixo da instituição */
+        }
+
+        .titulo-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza o título verticalmente no meio da página */
+        }
+
+        .titulo {
+            font-weight: bold;
+        }
+
+        .subtitulo {
+            font-weight: normal;
+            margin-top: 0.5cm;
+        }
+
+        .rodape {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2cm;
+        }
+
+        /* Regras de CSS específicas para quando for imprimir ou salvar em PDF */
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+            .capa-abnt {
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="capa-abnt">
+        
+        <!-- Topo da página: Instituição e Curso -->
+        <div class="topo">
+            <div class="instituicao">Nome da Instituição de Ensino</div>
+            <div class="instituicao">Nome do Centro ou Faculdade</div>
+            <div class="instituicao">Nome do Curso de Graduação / Técnico</div>
+        </div>
+
+        <!-- Nome do Autor -->
+        <div class="autor">
+            Nome Completo do Autor
+        </div>
+
+        <!-- Centro da página: Título e Subtítulo -->
+        <div class="titulo-container">
+            <h1 class="titulo">Título Principal do Trabalho: Em Negrito</h1>
+            <h2 class="subtitulo">Subtítulo do Trabalho (Se houver, sem negrito)</h2>
+        </div>
+
+        <!-- Rodapé da página: Local e Ano -->
+        <div class="rodape">
+            <div>Cidade - Sigla Estado</div>
+            <div>2026</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

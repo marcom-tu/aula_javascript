@@ -1,0 +1,383 @@
+/*comentario*/
+/*
+CSS INLINE (FUNCIONA NO .HTML)
+<... style="background:rgb(16,174,69);color:cyan">
+*/
+
+/*Seletor Universal*/
+* {
+    color: black;
+    /*Nome cor*/
+}
+
+/*Seletor TAG Especifica*/
+p {
+    color: rgb(58, 113, 0);
+}
+
+/*Seletor Múltiplas TAGs*/
+h5,
+h6 {
+    color: darkgoldenrod;
+}
+
+/*Seletor por ID*/
+#titulo2 {
+    /**/
+    color: rgba(46, 109, 255, 0.59);
+    /*RGB com Alpha*/
+}
+
+/*Seletor por Classe*/
+.classe1 {
+    color: hsl(270, 80%, 50%);
+    /*Matiz,Saturação,Luminosidade*/
+}
+
+/*CAIXA*/
+.Padding {
+    padding: 50px 50px 50px 50px;
+    /*Sentido Horario*/
+}
+
+/*CAIXA*/
+.border {
+    border-width: 3px;
+    /*Tamanho
+        border-top-width: 3px
+        border-right-width: 3%
+        border-botton-width: 3px
+        border-left-width: 3%
+        */
+    border-color: aqua;
+    /*Cor
+        border-color-top: aqua
+        border-color-right: aqua
+        border-color-botton: aqua
+        border-color-left: aqua
+        */
+    border-style: solid;
+    /*Tipo
+        border-top-style: groove, ridge, inset, outset = Efeitos 3D
+        border-right-style: dashed = Tracejada
+        border-botton-style: dotted = Pontilhada
+        border-left-style: double = Dupla
+            none ou hidden = Sem Borda
+        */
+    border-radius: 10px;
+    /*Curvatura*/
+}
+
+/*CAIXA*/
+.margin {
+    margin: auto;
+    /*Tamanho
+        margin-top: 3px
+        margin-right: 3%
+        margin-botton: 3px
+        margin-left: 3%
+        */
+    margin-inline-start: auto;
+}
+
+/*DISPLAY*/
+.block {
+    display: block;
+}
+
+/*DISPLAY*/
+.inline {
+    display: inline;
+    /*
+    Quebra linha = Não
+    WIDTH || HEIGTH = Não
+    PADDING || MARGIN = Sim para LEFT || RIGTH
+    */
+}
+
+/*DISPLAY*/
+.inline-block {
+    display: inline-block;
+    /*
+    Quebra linha = Não
+    WIDTH || HEIGTH = Sim
+    PADDING || MARGIN = Sim
+    */
+}
+
+/*DISPLAY*/
+.flex {
+    display: flex;
+    flex-direction: row;
+    /*
+        row = Esquerda para Direita (Padrão)
+        row-reverse = Direita para Esquerda
+        column = Cima para Baixo
+        column-reverse = Baixo para Cima
+    */
+    flex-wrap: nowrap;
+    /*
+        nowrap = Mantém linha reduz escala (Padrão)
+        wrap = Quebra de linha (→ ↓ → ↓)
+        wrap-reverse = Quebra de linha (→ ↑ → ↑)
+    */
+    justify-content: flex-start;
+    /*
+        flex-start = Alinha no inicio (Esquerda) (Padrão)
+        flex-end = anlinha no final (Direita)
+        center = Centraliza
+        space-between = Espaçamento igual entre intens
+        space-around = Espaçamento igual de margin
+        space-evenly = Espaçamento igual de tudo
+    */
+    align-items: stretch;
+    /*
+        stretch = Estica pra preencher (Padrão)
+        flex-start = Alinha no topo/inicio
+        flex-end = Alinha na base/fim
+        center = Centraliza
+        baseline = Alinha a base do texto
+    */
+    gap: 15px; /*Espaçamento*/
+}
+
+/*DISPLAY*/
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px; /*Qtd e largura das colunas*/
+    grid-template-rows: 200px 200px 200px;/*Qtd e altura das linhas*/
+    justify-content: stretch;
+    /* HORIZONTAL GRID
+        stretch = Estica pra preencher (Padrão)
+        start = Alinha no inicio (Esquerda)
+        end = anlinha no final (Direita)
+        center = Centraliza
+        space-between = Espaçamento igual entre intens
+        space-around = Espaçamento igual de margin
+        space-evenly = Espaçamento igual de tudo  
+    */
+    align-content: stretch;
+    /* VERTICAL GRID
+        stretch = Estica pra preencher (Padrão)
+        start = Alinha no inicio (Topo)
+        end = anlinha no final (Base)
+        center = Centraliza
+        space-between = Espaçamento igual entre intens
+        space-around = Espaçamento igual de margin
+        space-evenly = Espaçamento igual de tudo
+    */
+    justify-items: stretch;
+    /*
+        stretch = Estica pra preencher (Padrão)
+        start = Alinha no inicio (Esquerda)
+        end = anlinha no final (Direita)
+        center = Centraliza
+    */
+    align-items: stretch;
+    /*
+        stretch = Estica pra preencher (Padrão)
+        start = Alinha no inicio (Topo)
+        end = anlinha no final (Base)
+        center = Centraliza
+    */
+    gap: 10px; /*Espaçamento Geral*/
+    column-gap: 10px;/*Espaçamento Coluna*/
+    row-gap: 10px ;/*Espaçamento Linhas*/
+}
+
+/*DISPLAY*/
+.none {
+    display: none;
+}
+
+/*TEXTOS*/
+.overflow{
+    overflow: auto;
+    /*
+        visible = vaza por cima dos demais
+        hidden = esconde oque não tem espaço
+        clip = corta oque não tem espaço
+        scroll = adiciona barra de rolagem sempre
+        auto = adiciona barra de rolagem quando necessário
+    */
+}
+
+/*TEXTOS*/
+.white-space{
+    white-space: break-spaces;
+    /*
+        normal = 1 espaço / quebra linha (padrão)
+        nowrap = 1 espaço / não quebra linha
+        pre = + espaços / quebra apenas com "enter"
+        pre-wrap = + espaços / quebra com "enter", borda
+        pre-line = 1 espaço / quebra com "enter", borda
+        break-spaces = todos espaços / quebra com "enter", borda, + espaços
+    */
+}
+
+/*TEXTOS*/
+.text-_____{
+    text-align: left;/* left (padrão) / right / center / justify */
+    text-indent: 10px;/* Recuo parágrafo */
+    text-decoration: underline solid red 1px;/* Decoração do text*/
+    text-decoration-line: underline;
+    /*
+        overline = cima
+        line-through = meio
+        underline = baixo
+    */
+    text-decoration-style: solid;
+    /*
+        dashed = tracejado
+        dotted  = pontilhado
+        double = dupla
+        solid = simples
+        wavy = ondulado
+    */
+    text-decoration-color: red; 
+    /* Cor decoração*/
+    text-decoration-thickness: 1px; 
+    /* Espessura decoração*/
+    text-underline-offset: 1px;
+    /* Distancia entre texto e sublinhado */
+    text-shadow: 1px 3px 5px black;
+    /*: > / V / blur / cor */
+    text-transform: ;
+    /* eXeMpLo
+        uppercase = EXEMPLO
+        capitalize = Exemplo
+        lowercase = exemplo
+        none = eXeMpLo
+    */
+    text-overflow: ellipsis; /*white-space:nowrap & overflow: hidden;*/
+    /*
+        clip = corta no limite (Padrão)
+        ellipsis = coloca "..." no corte
+    */
+}
+
+/*TEXTOS*/
+.espacamento{
+    word-spacing: normal; /* Espaçamento entre    palavras */ 
+    letter-spacing: normal; /* Espaçamento entre l e t r a s */
+}
+
+/*GRADIENTE*/
+.gradiente{
+    background-image: linear-gradient(135deg, #1abc9c 0% 50%, #2c3e50 100%);
+    /*
+    (to rigth, red,black)
+    (135deg, #1abc9c 0% 50%, #2c3e50 100%)
+    */
+    background-image: radial-gradient(circle, #1abc9c 10%, #2c3e50 60%);
+    /*
+    (circle at top left, #1abc9c, #2c3e50)
+    (circle, #1abc9c, #2c3e50)
+    */
+    background-image: conic-gradient( #1abc9c 10%, #2c3e50 60%);
+    /*
+    (circle at top left, #1abc9c, #2c3e50)
+    (circle, #1abc9c, #2c3e50)
+    */
+}
+
+/*VARIAVEIS*/
+:root{
+    --text-color:red;
+    --fundo_cor: black;
+}
+.variavel{
+    color: var(--text-color);
+    background-color: var(--fundo_cor);
+}
+
+/*POSITION*/
+.position{
+    position: fixed;
+    /*
+    static = fluxo normal | sem referencia | rolagem normal (padrão)
+    relative = espaço mantido | referencia original | rolagem normal
+    absolute = espaço ocupavel | referencia ancestral | rolagem normal
+    fixed = sai do fluxo | janela de vizualização | travado na tela
+    sticky = espaço mantido até limite | referencia ancestral | rolagem até limite
+    */
+    z-index: 1;/*Camada*/
+}
+
+/*MOUSE*/
+h1:hover{
+    /* Quando o mouse passa por cima */ 
+}
+#titulo:active{
+    /* Enquanto o objeto está sendo clicado */
+}
+
+/*TRANSFORM*/
+.transform{
+    transform: translate(90px,-90px) scale(1.5) rotate(5deg) skew(15deg);
+    /*
+    :translate(,) scale() rotate(deg) skew(deg);
+    */
+    transform: translate(x,y);/* movimento */
+    /*
+        translateX()
+        translateY()
+    */
+    transform: scale(n,n); /* escala */
+    /*  1,1 = normal / 0,0 = some / -1,-1 = inverte
+        scaleX()
+        scaleY()
+    */
+    transform: rotate(deg); /* rotação */
+    transform: skew(deg); /* inclinação */
+}
+
+/*KEYFRAMES*/
+@keyframes key_frame_h1 {
+    0%{ /* from */
+        transform: scale(1);
+    }
+    100%{ /* to */
+        transform: scale(1.5);
+    }
+}
+
+/*AMIMATION*/
+.animation{
+    animation: key_frame_h1 10s linear 1s 2 normal forwards;
+    /*
+    name duration timing delay iteration direction fill
+    */
+    animation-name: key_frame_h1; /* identiifcador */
+    animation-duration: 10s;/* 10ms | 10s */
+    animation-timing-function: linear;
+    /*
+        ease = lento rapido lento (padrão)
+        ease-in = lento rapido
+        ease-out = rapido lento
+        ease-in-out = rapido lento rapido
+        linear = linear
+        steps(5) = quantidade de imagens
+    */
+    animation-delay: 1s;/* 10ms | 10s */
+    animation-iteration-count: 2;/* n | infinite */
+    animation-direction: normal;
+    /*
+        normal = 0% > 100% (padrão)
+        reverse = 100% > 0%
+        alternate = 0% > 100% > 0%
+        alternate-reverse = 100% > 0% > 100%
+    */
+    animation-fill-mode: none;
+    /*
+        none = ignora estilo keyframe
+        forwards = para no fim (direction: normal)
+        backwards = para no inicio (direction: reverse)
+        both = para em ambos (direction: QUALQUER)
+    */
+    animation-play-state: running;
+    /*
+        running = roda a animação
+        paused = para a animação
+    */
+}
